@@ -1,0 +1,12 @@
+version: '2'
+services:
+ web:
+   image: fairyming/phpcms
+   depends_on:
+    - mysql
+   ports:
+    - "8080:80"
+ mysql:
+   image: mysql:5
+   environment:
+    - MYSQL_ROOT_PASSWORD=root
