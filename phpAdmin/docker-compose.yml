@@ -1,0 +1,12 @@
+version: '3'
+services:
+        phpadmin:
+                container_name: phpadmin
+                image: li9hu/old
+                ports:
+                        - "8001:80"
+                tty: true
+                volumes:
+                        - ./src:/var/www/html
+                environment:
+                        - TZ=Alia/Shanghai
