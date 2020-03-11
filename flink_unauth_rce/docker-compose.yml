@@ -1,0 +1,6 @@
+version: '2'
+services:
+ web:
+   image: fairyming/flink_unauth_rce
+   ports:
+    - "8081:8081"
